@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: co.almundo.CallCenter.bo.CallTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec <<< FAILURE!
+co.almundo.CallCenter.bo.CallTest.testCallDurationInterval()  Time elapsed: 0.171 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org.junit.Assert
+	at co.almundo.CallCenter.bo.CallTest.testCallDurationInterval(CallTest.java:19)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:607)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:797)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:771)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:325)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:752)
+	... 19 more
+
+co.almundo.CallCenter.bo.CallTest.testCallIntialStatus()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bo.CallTest.testCallIntialStatus(CallTest.java:25)
+

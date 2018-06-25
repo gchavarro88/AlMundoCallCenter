@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="co.almundo.CallCenter.bo.EmployeeTest" time="0.001" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="IBM Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\jaxws-api.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\jaxb-api.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar;C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs\jclSC180\vm.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\se-service.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\math.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\jlm.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmorb.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmorbapi.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmpkcs.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcertpathfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjgssfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjssefw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmsaslfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjcefw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjgssprovider.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjsseprovider2.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcertpathprovider.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\xmldsigfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\xml.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\charsets.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\resources.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\rt.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\dataaccess.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmgpu.jar"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="pwa6480sr1fp10-20150711_01 (SR1 FP10)"/>
+    <property name="user.name" value="gustavochavarro"/>
+    <property name="java.compiler" value="j9jit28"/>
+    <property name="os.encoding" value="UTF8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="user.language" value="en"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="classworlds.conf" value="C:\Gustavo Chavarro\Mis Proyectos\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf937899944323345035.tmp"/>
+    <property name="java.version" value="1.8.0"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="com.ibm.system.agent.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.zero.version" value="2"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed"/>
+    <property name="com.ibm.oti.vm.library.version" value="28"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="com.ibm.packed.version" value="2"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="java.home" value="C:\Program Files\IBM\SDP\jdk\jre"/>
+    <property name="java.vm.info" value="JRE 1.8.0 Windows 7 amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633"/>
+    <property name="os.version" value="6.1"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="2.8"/>
+    <property name="user.variant" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="user.home" value="C:\Users\IBM_ADMIN"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="java.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IBM\Infoprint Select;C:\Program Files (x86)\IBM\Personal Communications\;C:\Program Files (x86)\IBM\Trace Facility\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\IBM_ADMIN\AppData\Roaming\npm;."/>
+    <property name="java.vendor.url" value="http://www.ibm.com/"/>
+    <property name="java.vm.vendor" value="IBM Corporation"/>
+    <property name="java.fullversion" value="JRE 1.8.0 IBM J9 2.8 Windows 7 amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633"/>
+    <property name="maven.home" value="C:\Gustavo Chavarro\Mis Documentos\Personales\almundo\CallCenter\EMBEDDED"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.class.path" value="/C:/Program Files/IBM/SDP/../IBMIMShared/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="C:\Users\IBM_AD~1\AppData\Local\Temp\"/>
+    <property name="ibm.system.encoding" value="Cp1252"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="java.ext.dirs" value="C:\Program Files\IBM\SDP\jdk\jre\lib\ext"/>
+    <property name="user.dir" value="C:\Gustavo Chavarro\Mis Documentos\Personales\almundo\CallCenter"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="IBM J9 VM"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="com.ibm.oti.jcl.build" value="20150630_255633"/>
+    <property name="java.specification.version" value="1.8"/>
+  </properties>
+  <testcase classname="co.almundo.CallCenter.bo.EmployeeTest" name="co.almundo.CallCenter.bo.EmployeeTest.testEmployeePosition" time="0.001">
+    <failure message="org.junit.Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org.junit.Assert
+	at co.almundo.CallCenter.bo.EmployeeTest.testEmployeePosition(EmployeeTest.java:18)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:607)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:797)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:771)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:325)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:752)
+	... 19 more
+</failure>
+  </testcase>
+</testsuite>

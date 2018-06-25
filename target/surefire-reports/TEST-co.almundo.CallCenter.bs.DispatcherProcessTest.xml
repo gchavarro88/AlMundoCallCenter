@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="6" name="co.almundo.CallCenter.bs.DispatcherProcessTest" time="3.884" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="IBM Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\jaxws-api.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\jaxb-api.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed\javax.j2ee.annotation.jar;C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs\jclSC180\vm.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\se-service.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\math.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\jlm.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmorb.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmorbapi.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmpkcs.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcertpathfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjgssfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjssefw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmsaslfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjcefw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjgssprovider.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmjsseprovider2.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmcertpathprovider.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\xmldsigfw.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\xml.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\charsets.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\resources.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\rt.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\dataaccess.jar;C:\Program Files\IBM\SDP\jdk\jre\lib\ibmgpu.jar"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="pwa6480sr1fp10-20150711_01 (SR1 FP10)"/>
+    <property name="user.name" value="gustavochavarro"/>
+    <property name="java.compiler" value="j9jit28"/>
+    <property name="os.encoding" value="UTF8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="user.language" value="en"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="classworlds.conf" value="C:\Gustavo Chavarro\Mis Proyectos\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf937899944323345035.tmp"/>
+    <property name="java.version" value="1.8.0"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="com.ibm.system.agent.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.zero.version" value="2"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\IBM\SDP\jdk\jre\lib\endorsed"/>
+    <property name="com.ibm.oti.vm.library.version" value="28"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="com.ibm.packed.version" value="2"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="java.home" value="C:\Program Files\IBM\SDP\jdk\jre"/>
+    <property name="java.vm.info" value="JRE 1.8.0 Windows 7 amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633"/>
+    <property name="os.version" value="6.1"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="2.8"/>
+    <property name="user.variant" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="user.home" value="C:\Users\IBM_ADMIN"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="java.library.path" value="C:\Program Files\IBM\SDP\jdk\jre\bin\compressedrefs;C:\Program Files\IBM\SDP\jdk\jre\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IBM\Infoprint Select;C:\Program Files (x86)\IBM\Personal Communications\;C:\Program Files (x86)\IBM\Trace Facility\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\IBM_ADMIN\AppData\Roaming\npm;."/>
+    <property name="java.vendor.url" value="http://www.ibm.com/"/>
+    <property name="java.vm.vendor" value="IBM Corporation"/>
+    <property name="java.fullversion" value="JRE 1.8.0 IBM J9 2.8 Windows 7 amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633"/>
+    <property name="maven.home" value="C:\Gustavo Chavarro\Mis Documentos\Personales\almundo\CallCenter\EMBEDDED"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.class.path" value="/C:/Program Files/IBM/SDP/../IBMIMShared/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="C:\Users\IBM_AD~1\AppData\Local\Temp\"/>
+    <property name="ibm.system.encoding" value="Cp1252"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="java.ext.dirs" value="C:\Program Files\IBM\SDP\jdk\jre\lib\ext"/>
+    <property name="user.dir" value="C:\Gustavo Chavarro\Mis Documentos\Personales\almundo\CallCenter"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="IBM J9 VM"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="com.ibm.oti.jcl.build" value="20150630_255633"/>
+    <property name="java.specification.version" value="1.8"/>
+  </properties>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttend" time="0.751">
+    <failure message="org.junit.Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org.junit.Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttend(DispatcherProcessTest.java:22)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:607)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:797)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:771)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:325)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:752)
+	... 19 more
+</failure>
+    <system-out>2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 1 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 2 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 3 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 4 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 5 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:35 - Creating an Employee N�: 6 with position: OPERATOR
+2018-03-12 16:23:38 INFO  Dispatcher:39 - Creating an Employee N�: 7 with position: SUPERVISOR
+2018-03-12 16:23:38 INFO  Dispatcher:39 - Creating an Employee N�: 8 with position: SUPERVISOR
+2018-03-12 16:23:38 INFO  Dispatcher:39 - Creating an Employee N�: 9 with position: SUPERVISOR
+2018-03-12 16:23:38 INFO  Dispatcher:44 - Creating an Employee N�: 10 with position: DIRECTOR
+2018-03-12 16:23:38 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:38 INFO  Dispatcher:95 - found Employee ID: 1 position: OPERATOR employees availables: 9
+2018-03-12 16:23:38 INFO  DispatcherProcess:41 - Calls incoming: 0
+2018-03-12 16:23:38 INFO  DispatcherProcess:45 - The call N�3 begins with 6 seconds and the employee N� 1 and Position: OPERATOR
+2018-03-12 16:23:38 INFO  DispatcherProcess:47 - Calls attended 1
+2018-03-12 16:23:38 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:38 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:38 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:39 INFO  DispatcherProcess:49 - Finish the call N�3
+2018-03-12 16:23:39 INFO  DispatcherProcess:52 - Employees availables: 10
+2018-03-12 16:23:39 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:39 INFO  Dispatcher:75 - Finish process, all calls were attended
+</system-out>
+  </testcase>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendByOperator" time="1.008">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendByOperator(DispatcherProcessTest.java:29)
+</failure>
+    <system-out>2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 1 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 2 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 3 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 4 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 5 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:35 - Creating an Employee N�: 6 with position: OPERATOR
+2018-03-12 16:23:39 INFO  Dispatcher:39 - Creating an Employee N�: 7 with position: SUPERVISOR
+2018-03-12 16:23:39 INFO  Dispatcher:39 - Creating an Employee N�: 8 with position: SUPERVISOR
+2018-03-12 16:23:39 INFO  Dispatcher:39 - Creating an Employee N�: 9 with position: SUPERVISOR
+2018-03-12 16:23:39 INFO  Dispatcher:44 - Creating an Employee N�: 10 with position: DIRECTOR
+2018-03-12 16:23:39 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:39 INFO  Dispatcher:95 - found Employee ID: 1 position: OPERATOR employees availables: 9
+2018-03-12 16:23:39 INFO  DispatcherProcess:41 - Calls incoming: 0
+2018-03-12 16:23:39 INFO  DispatcherProcess:45 - The call N�4 begins with 9 seconds and the employee N� 1 and Position: OPERATOR
+2018-03-12 16:23:39 INFO  DispatcherProcess:47 - Calls attended 1
+2018-03-12 16:23:39 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:39 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:39 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:40 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�4
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 10
+2018-03-12 16:23:40 INFO  Dispatcher:68 - Waiting while all calls are attended: 1, Calls on hold: 0
+2018-03-12 16:23:40 INFO  Dispatcher:75 - Finish process, all calls were attended
+</system-out>
+  </testcase>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendBySupervisor" time="1.028">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendBySupervisor(DispatcherProcessTest.java:43)
+</failure>
+    <system-out>2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 1 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 2 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 3 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 4 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 5 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:35 - Creating an Employee N�: 6 with position: OPERATOR
+2018-03-12 16:23:40 INFO  Dispatcher:39 - Creating an Employee N�: 7 with position: SUPERVISOR
+2018-03-12 16:23:40 INFO  Dispatcher:39 - Creating an Employee N�: 8 with position: SUPERVISOR
+2018-03-12 16:23:40 INFO  Dispatcher:39 - Creating an Employee N�: 9 with position: SUPERVISOR
+2018-03-12 16:23:40 INFO  Dispatcher:44 - Creating an Employee N�: 10 with position: DIRECTOR
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 1 position: OPERATOR employees availables: 9
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 3
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�5 begins with 5 seconds and the employee N� 1 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 1
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 2 position: OPERATOR employees availables: 8
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 4
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�6 begins with 8 seconds and the employee N� 2 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 2
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 3 position: OPERATOR employees availables: 7
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 7
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�7 begins with 9 seconds and the employee N� 3 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 3
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 4 position: OPERATOR employees availables: 6
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 6
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�8 begins with 5 seconds and the employee N� 4 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 4
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 5 position: OPERATOR employees availables: 5
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 5
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�9 begins with 6 seconds and the employee N� 5 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 5
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 6 position: OPERATOR employees availables: 4
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 4
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�10 begins with 6 seconds and the employee N� 6 and Position: OPERATOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 6
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 7 position: SUPERVISOR employees availables: 3
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 3
+2018-03-12 16:23:40 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 8 position: SUPERVISOR employees availables: 2
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 2
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�12 begins with 9 seconds and the employee N� 8 and Position: SUPERVISOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 8
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 9 position: SUPERVISOR employees availables: 1
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 1
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�13 begins with 5 seconds and the employee N� 9 and Position: SUPERVISOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 9
+2018-03-12 16:23:40 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:40 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:37 - At this time there are not SUPERVISOR available, it will be attended by a DIRECTOR
+2018-03-12 16:23:40 INFO  Dispatcher:95 - found Employee ID: 10 position: DIRECTOR employees availables: 0
+2018-03-12 16:23:40 INFO  DispatcherProcess:41 - Calls incoming: 0
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�14 begins with 6 seconds and the employee N� 10 and Position: DIRECTOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 10
+2018-03-12 16:23:40 INFO  DispatcherProcess:45 - The call N�11 begins with 9 seconds and the employee N� 7 and Position: SUPERVISOR
+2018-03-12 16:23:40 INFO  DispatcherProcess:47 - Calls attended 10
+2018-03-12 16:23:40 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:40 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�5
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 1
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�8
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 2
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�13
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 3
+2018-03-12 16:23:40 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�9
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 4
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�10
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 5
+2018-03-12 16:23:40 INFO  DispatcherProcess:49 - Finish the call N�14
+2018-03-12 16:23:40 INFO  DispatcherProcess:52 - Employees availables: 6
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�6
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 7
+2018-03-12 16:23:41 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�7
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 8
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�12
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 9
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�11
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 10
+2018-03-12 16:23:41 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:41 INFO  Dispatcher:75 - Finish process, all calls were attended
+</system-out>
+  </testcase>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendByDirector" time="1.097">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testCallAttendByDirector(DispatcherProcessTest.java:56)
+</failure>
+    <system-out>2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 1 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 2 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 3 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 4 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 5 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:35 - Creating an Employee N�: 6 with position: OPERATOR
+2018-03-12 16:23:41 INFO  Dispatcher:39 - Creating an Employee N�: 7 with position: SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:39 - Creating an Employee N�: 8 with position: SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:39 - Creating an Employee N�: 9 with position: SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:44 - Creating an Employee N�: 10 with position: DIRECTOR
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 1 position: OPERATOR employees availables: 9
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 3
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�15 begins with 6 seconds and the employee N� 1 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 1
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 2 position: OPERATOR employees availables: 8
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 8
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�16 begins with 5 seconds and the employee N� 2 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 2
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 3 position: OPERATOR employees availables: 7
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 7
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�17 begins with 7 seconds and the employee N� 3 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 3
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 4 position: OPERATOR employees availables: 6
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 6
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�18 begins with 6 seconds and the employee N� 4 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 4
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 5 position: OPERATOR employees availables: 5
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 5
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�19 begins with 6 seconds and the employee N� 5 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 5
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 6 position: OPERATOR employees availables: 4
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 4
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�20 begins with 9 seconds and the employee N� 6 and Position: OPERATOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 6
+2018-03-12 16:23:41 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 7 position: SUPERVISOR employees availables: 3
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 3
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�21 begins with 5 seconds and the employee N� 7 and Position: SUPERVISOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 7
+2018-03-12 16:23:41 DEBUG DispatcherProcess:30 - finding a employee available
+2018-03-12 16:23:41 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 8 position: SUPERVISOR employees availables: 2
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 2
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�22 begins with 7 seconds and the employee N� 8 and Position: SUPERVISOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 8
+2018-03-12 16:23:41 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 9 position: SUPERVISOR employees availables: 1
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 1
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�23 begins with 9 seconds and the employee N� 9 and Position: SUPERVISOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 9
+2018-03-12 16:23:41 INFO  DispatcherProcess:33 - At this time there are not OPERATOR available, it will be attended by a SUPERVISOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:37 - At this time there are not SUPERVISOR available, it will be attended by a DIRECTOR
+2018-03-12 16:23:41 INFO  Dispatcher:95 - found Employee ID: 10 position: DIRECTOR employees availables: 0
+2018-03-12 16:23:41 INFO  DispatcherProcess:41 - Calls incoming: 0
+2018-03-12 16:23:41 INFO  DispatcherProcess:45 - The call N�24 begins with 9 seconds and the employee N� 10 and Position: DIRECTOR
+2018-03-12 16:23:41 INFO  DispatcherProcess:47 - Calls attended 10
+2018-03-12 16:23:41 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:41 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�16
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 1
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�21
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 2
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�15
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 3
+2018-03-12 16:23:41 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�18
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 4
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�19
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 5
+2018-03-12 16:23:41 INFO  DispatcherProcess:49 - Finish the call N�17
+2018-03-12 16:23:41 INFO  DispatcherProcess:52 - Employees availables: 6
+2018-03-12 16:23:42 INFO  DispatcherProcess:49 - Finish the call N�22
+2018-03-12 16:23:42 INFO  DispatcherProcess:52 - Employees availables: 7
+2018-03-12 16:23:42 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:42 INFO  DispatcherProcess:49 - Finish the call N�20
+2018-03-12 16:23:42 INFO  DispatcherProcess:52 - Employees availables: 8
+2018-03-12 16:23:42 INFO  DispatcherProcess:49 - Finish the call N�23
+2018-03-12 16:23:42 INFO  DispatcherProcess:52 - Employees availables: 9
+2018-03-12 16:23:42 INFO  DispatcherProcess:49 - Finish the call N�24
+2018-03-12 16:23:42 INFO  DispatcherProcess:52 - Employees availables: 10
+2018-03-12 16:23:42 INFO  Dispatcher:68 - Waiting while all calls are attended: 10, Calls on hold: 0
+2018-03-12 16:23:42 INFO  Dispatcher:75 - Finish process, all calls were attended
+</system-out>
+  </testcase>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testChangeCallStatus" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testChangeCallStatus(DispatcherProcessTest.java:64)
+</failure>
+  </testcase>
+  <testcase classname="co.almundo.CallCenter.bs.DispatcherProcessTest" name="co.almundo.CallCenter.bs.DispatcherProcessTest.testChangeEmployeeStatus" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at co.almundo.CallCenter.bs.DispatcherProcessTest.testChangeEmployeeStatus(DispatcherProcessTest.java:72)
+</failure>
+  </testcase>
+</testsuite>
